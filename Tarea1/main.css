@@ -1,0 +1,39 @@
+p{
+    font-size: 30px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+header,nav,section,footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: aqua;
+    height: 10%;
+}
+nav{
+    background-color: blue;
+    height: 5%;
+}
+main {
+    height: 75%;
+}
+main>section:nth-child(odd){
+    background-color: green;
+    height: 53.33%;
+}
+section{
+    background-color: red;
+    height: 46.67%;
+}
+footer{
+    background-color: blueviolet;
+    height: 10%;
+}

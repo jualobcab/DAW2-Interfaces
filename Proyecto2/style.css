@@ -1,0 +1,165 @@
+/* Importar las fuentes, una de forma local y la otra por URL */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('oswaldFont/Oswald-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables */
+:root{
+    --color-Principal:#ff7f16;
+    --color-secundario:rgb(1, 1, 207);
+}
+
+/* Fuentes */
+h1,h2,a,label {
+    font-family: "Oswald";
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.fira-Sans {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.25em;
+}
+
+.oswald {
+    font-family: "Oswald";
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.fira-Sans>span {
+    color: var(--color-Principal);
+    text-shadow: 2px 2px 4px #d16913;
+}
+
+.oswald>span {
+    color: blue;
+    text-shadow: 2px 1px 5px var(--color-secundario);
+}
+
+/* Body */
+html {
+    margin: -8px;
+}
+
+/* Cabecera */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+header>div {
+    margin: 10px;
+}
+
+header>div.login {
+    display: flex;
+}
+
+header>div.zona-Logo {
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+
+.logo-Empresa {
+    border-radius: 5px;
+    width: 150px;
+    margin: 7px;
+}
+
+header input[type="submit"] {
+    background-color: var(--color-Principal);
+    color: black;
+    transition: background-color 0.5s;
+    font-family: "Oswald";
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+header input[type="submit"]:hover {
+    background-color: whitesmoke;
+}
+
+header form {
+    display: flex;
+}
+.form-Group {
+    display: flex;
+}
+.form-Group_align-bottom {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Zona de Navegación */
+nav {
+    background-color: var(--color-Principal);
+    height: 2.1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+    padding: 5px;
+    width: 33.33%;
+    text-align: center;
+}
+
+nav>a:hover {
+    color: var(--color-Principal);
+    background-color: black;
+}
+
+/* Seccion otra*/
+section {
+    padding: 15px;
+}
+
+
+/* Seccion de Productos Destacados */
+.productos-Destacados {
+    display: grid;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
