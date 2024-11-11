@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Cambiar el lenguaje por el lenguaje apropiado -->
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+	@import url(../Nueva carpeta/base.css);
+	@import url(../Nueva carpeta/content.css);
+    </style>
+    
+    <title>Resumen textual alternativo para la presentación "Modos de aplicación y la sintaxis de las reglas de sintaxis."</title>
+  </head>
+  <body>
+	<p>Presentación en la que se repasan los distintos Modos de aplicación</p>
+<p class="texto_centrado"><strong>Estilos en línea.</strong></p> 
+
+<p>Se puede añadir información de estilo a un elemento concreto de un documento <acronym title=HyperText Markup Language" lang="en">HTML</acronym>, en adelante <acronym title=HyperText Markup Language" lang="en">HTML</acronym>,  empleando el atributo <strong><span lang="en">style</span></strong> en la etiqueta del elemento. Esta operación se realiza en el propio documento. </p>
+
+<p>Aunque este es un uso perfectamente válido de la información de estilo, los estilos en línea contaminan el documento con información de presentación.</p>
+ 
+ <p>Debe emplearse con moderación, solo ocasionalmente, para ignorar reglas de nivel más alto. </p>
+
+<p>De hecho, el atributo <span lang="en">style</span> fue depreciado en<acronym title=eXtensible HyperText Markup Language" lang="en">XHTML</acronym> 1.1 y no aparece en otros lenguajes <acronym title=eXtensible Markup Language" lang="en">XML</acronym>. </p>
+<p class="texto_centrado"><strong>Hojas de estilos incrustadas.</strong></p>
+
+<p>Un método más compacto para añadir hojas de estilo es incrustar un bloque de estilo en la parte superior (en la cabecera) del documento <acronym title=HyperText Markup Language" lang="en">HTML</acronym> empleando el elemento <span lang="en">style</span>. 
+</p>
+<p class="texto_centrado"><strong>Hojas de estilos incrustadas.</strong></p> 
+
+<p>El elemento style debe colocarse en la cabecera del documento (dentro del <span lang="en">head</span>).</p>
+
+<p>El atributo media permite seleccionar el medio en el que se va a aplicar el estilo: pantalla (<span lang="en">screen</span>), impresión, dispositivo móvil, etcétera.</p>
+
+<p>Los navegadores más antiguos, que ignoran el elemento <strong><span lang="en">style</span></strong> normalmente mostrarían su contenido como si fuera parte del cuerpo del documento (<span lang="en">body</span>), de modo que el usuario vería el texto correspondiente a las reglas de estilo en lugar de su aplicación en el contenido de la página. Para evitarlo, las reglas de estilo se ponen dentro de un comentario empleando <!-- y --> para abrir y cerrar el comentario, respectivamente.
+</p>
+<p>Este método puede emplearse cuando sólo tenemos un documento web que utiliza un único estilo.
+</p>
+<p class="texto_centrado"><strong>Hojas de estilos externas importadas.</strong> </p>
+
+<p>Ten en cuenta, si utilizas este método, que:</p>
+
+<p>Las sentencias <code>@import</code> deben estar al principio de la hoja de estilo, antes que cualquier otra regla.
+</p>
+
+<p>El orden en el que se importan las hojas de estilo es relevante, prevaleciendo en caso de conflicto el del último archivo importado.
+</p>
+<p class="texto_centrado"><strong>Hojas de estilos externas vinculadas o enlazadas.</strong> </p>
+
+<p>Es el modo más potente de utilizar <acronym title=Cascading Style Sheets" lang="en">CSS</acronym>.</p>
+
+<p>Se reúnen todas las reglas de estilo en un documento de texto independiente y se crean vínculos a ese documento desde todas las páginas de un sitio. 
+</p>
+<p>De este modo, se pueden hacer cambios en el estilo de un modo homogéneo en todo el sitio editando la información del estilo en un único documento. 
+</p>
+<p><strong>Hojas de estilos externas vinculadas o enlazadas. </strong></p>
+
+<p>Para hacerlo se emplea con el elemento <span lang="en">link</span> en el documento <acronym title=HyperText Markup Language" lang="en">HTML</acronym>.
+  
+  El elemento <span lang="en">link</span> se coloca en la cabecera (<span lang="en">head</span>) del documento, tal y como se ve en el siguiente ejemplo:
+
+</p>
+<p>&lt;head&gt;<br />
+&lt;link rel=&quot;stylesheet&quot; href= ../Nueva carpeta/″../estilos/miestilo.css″  type=&quot;text/css&quot; /&gt;<br />
+&lt;/head&gt;<br />
+</p>
+
+
+<p>El atributo <code>rel</code> define la relación del documento vinculado con el documento actual.</p>
+
+<p>El atributo <code>href</code> indica la  <acronym title=Uniforme Resource Locator" lang="en">URL</acronym> del documento de hoja de estilo. Puedes vincular más de una hoja de estilo en un documento, y ten en cuenta que será muy importante el orden en el que las pongas pues se aplicarán "de arriba hacia abajo", es decir, la última hoja de estilos enlazada modificaría los estilos que coincidan con los de las anteriores.. </p>
+
+ 
+ 
+  </body>
+</html>

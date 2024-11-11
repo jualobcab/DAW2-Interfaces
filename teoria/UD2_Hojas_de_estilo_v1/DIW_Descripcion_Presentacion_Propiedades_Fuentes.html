@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+	@import url(base.css);
+	@import url(content.css);
+    </style>
+    <title>Resumen textual alternativo para la presentación "ejemplos de las propiedades de fuentes y explicación de las unidades de medida".</title>
+  </head>
+  <body>
+	
+<p>Para indicar el tamaño de la fuente existen cuatro métodos:</p>
+<ul class="lista_verificacion">
+
+<li>De forma absoluta: se emplea una de las palabras siguientes:
+  <ul>
+    <li><code>xx-small</code></li>
+    <li><code>x-small</code></li>
+    <li><code>small</code></li>
+    <li><code>medium</code></li>
+    <li><code>large</code></li>
+    <li><code>x-large</code></li>
+    <li><code>xx-large</code></li>
+  </ul>
+</li>
+
+<li>De forma relativa: se emplea una de las palabras siguientes:
+  <ul>
+    <li><code>smaller</code></li>
+    <li><code>larger</code></li>
+  </ul>
+</li>
+
+</ul>
+<p>Con una medida de longitud.</p>
+<p>En forma de porcentaje.</p>
+<p>Hay que tener en cuenta también las unidades de viewport que se estudiarán más adelante..</p>
+
+
+<p>Las dos últimas se muestran en la diapositiva siguiente.</p>
+<p>Para establecer una unidad de medida o porcentaje se indica:</p>
+<ul class="lista_verificacion">
+<li>El símbolo + ó – (de forma optativa). Si se omite se asume el símbolo +.</li>
+<li>Un número. Si el número tiene decimales se emplea el punto como separador decimal.</li>
+<li>El código o abreviatura de la unidad de medida. </li>
+</ul>
+
+<p>Las tres cosas van seguidas, sin ningún espacio en blanco intercalado.</p>
+
+
+<p>La mejor solución de trabajo es configurar un tamaño por defecto en forma de porcentaje, y para cada elemento de la página configurar el tamaño con la unidad <code>em</code>.</p>
+
+De esta forma garantizamos que cada usuario lo verá en función de como tenga configurado su navegador, aunque en navegadores antiguos como el IE 3.X aplica de forma incorrecta los valores <code>em</code> y <code>ex</code>.
+
+Propiedad font
+Esta propiedad engloba las propiedades siguientes: 
+<ul class="lista_verificacion">
+<li><code>font-style</code></li>
+<li><code>font-variant</code></li>
+<li><code>font-weight</code></li>
+<li><code>font-size/line-height</code></li>
+<li><code>font-family</code></li>
+<li><code>caption</code></li>
+<li><code>icon</code></li>
+<li><code>menu</code></li>
+<li><code>message-box</code></li>
+<li><code>small-caption</code></li>
+<li><code>status-bar</code>	</li>
+</ul>
+	
+	<p>Las seis últimas van a depender del tipo de navegador y versión que tengamos.</p>
+
+  <p>La sintaxis que hay que seguir para escribir la propiedad <code>font</code> es:</p>
+	
+font:[&lt;font-style&gt;||&lt;font-variant&gt;
+ ||&lt;font-weight&gt;
+ ]?&lt;font-size&gt;
+ [/&lt;line-height&gt;
+ ]?
+
+  &lt;font-family&gt;
+  </body>
+</html>

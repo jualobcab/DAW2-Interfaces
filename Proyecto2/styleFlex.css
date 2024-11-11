@@ -1,0 +1,70 @@
+/* Global */
+body {
+    margin: 0;
+    font-size: large;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8px;
+    background-color: aquamarine;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: chocolate;
+    padding: 5px;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    background-color: chartreuse;
+}
+
+section {
+    margin: 5px;
+    background-color: wheat;
+}
+
+section.promocion,section.tablaYPoliticas {
+    text-align: center;
+}
+
+section.productosDestacados {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+
+    padding: 15px;
+}
+section.productosDestacados>div {
+    text-align: center;
+    width: 32%;
+    margin: 5px;
+    background-color: rgb(180, 74, 74);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: cadetblue;
+}
+footer>div {
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(223, 177, 61);
+}

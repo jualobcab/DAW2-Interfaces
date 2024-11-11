@@ -11,10 +11,10 @@
     <header>
         <div class="zona-Logo"> <!-- Logo + nombre de empresa -->
             <img src="images/logoTemplate.webp" alt="logoEmpresa" class="logo-Empresa">
-            <p class="logo-Empresa">Gourmet Express</p>
+            <p class="nombreEmpresa">Gourmet Express</p>
         </div>
         <div class="login"> <!-- Un login -->
-            <form action="#">
+            <form action="#" id="formularioPc">
                 <div class="form-Section">
                     <div class="form-Group">
                         <label for="username">Usuario:</label>
@@ -29,6 +29,9 @@
                     <input type="submit" id="login" name="login" value="Log in">
                 </div>
             </form>
+            <div class="form-Group_align-bottom form-Group" id="botonMovilLogin">
+                <input type="submit" id="login" name="login" value="Log in">
+            </div>
         </div>
     </header>
     <nav> <!-- Ponerle sticky y formato (futura hamburguesa) -->
@@ -39,57 +42,228 @@
     <main>
         <section> <!-- Productos en promoción -->
             <h2>Productos en promoción</h2>
-            <div></div>
+            <div class="promocion">
+                <input id="flip-card" type="checkbox" />
+                <label class="front" for="flip-card">
+                    <img
+                        src="images/platos/spaghettis.webp"
+                        alt="Plato en promocion"
+                        class="imagenPromocion"/>
+                </label>
+                <label class="back" for="flip-card">
+                    <div>
+                        <p class="precioPromocion">Por solo 12.99 € !!!!!</p>
+                    </div>
+                </label>
+                <div>
+                    <a class="tituloProductoPromocion">Spaghettis cacio e pepe con guanciale</a>
+                    <p>Nuestros spaghetti cacio e pepe con guanciale son un deleite para los amantes de la pasta: la cremosidad del queso pecorino se funde con la pimienta negra recién molida, creando una salsa sedosa que envuelve cada bocado. El guanciale, dorado y crujiente, añade un toque ahumado y salado que equilibra a la perfección la suavidad del queso. ¡Una explosión de sabores sencillos pero irresistibles que te transportarán a la auténtica cocina italiana!</p>
+                </div>
+            </div>
         </section>
         <section> <!-- Productos destacados -->
             <h2>Productos destacados</h2>
             <div class="productos-Destacados"><!-- Muchas cards -->
                 <div class="card">
-                    <img src="" alt="card1">
-                    <div>
-
+                    <img src="images/platos/AlbondigasHeura.webp" alt="card1">
+                    <div class="infoProducto">
+                        <div class="tituloDescripcion">
+                            <h3>Albóndigas con boniato al chimichurri</h3>
+                            <p>Albóndigas jugosas servidas con boniato asado y un toque de chimichurri fresco. Un plato sabroso y equilibrado, ideal para disfrutar en cualquier momento.</p>
+                            <ul>
+                                <li><span>Valor energético:</span> 121 kcal</li>
+                                <li><span>Grasas/Lípidos:</span> 4.6 g</li>
+                                <li><span>Hidratos de carbono:</span> 12.6 g</li>
+                                <li><span>Proteínas:</span> 5.6 g</li>
+                            </ul>
+                        </div>
+                        <div class="precioIcono">
+                            <p class="precio">9.90€</p>
+                            <p class="iconoCards iconoPicante">Picante</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="" alt="card2">
-                    <div>
-
+                    <img src="images/platos/Ensalada-de-cous-cous-y-falafel.webp" alt="card2">
+                    <div class="infoProducto">
+                        <div class="tituloDescripcion">
+                            <h3>Ensalada de cous cous y faláfel</h3>
+                            <p>Una mezcla fresca de cous cous esponjoso y crujientes faláfel, acompañada de vegetales y aderezo de yogur y limón. ¡Ligera y deliciosa, perfecta para una comida saludable!</p>
+                            <ul>
+                                <li><span>Valor energético:</span> 96 kcal</li>
+                                <li><span>Grasas/Lípidos:</span> 4.16 g</li>
+                                <li><span>Hidratos de carbono:</span> 12.6 g</li>
+                                <li><span>Proteínas:</span> 2.6 g</li>
+                            </ul>
+                        </div>
+                        <div class="precioIcono">
+                            <p class="precio">8.50€</p>
+                            <p class="iconoCards iconoVegano">Vegano</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="" alt="card3">
-                    <div>
-
+                    <img src="images/platos/Fabada.webp" alt="card3">
+                    <div class="infoProducto">
+                        <div class="tituloDescripcion">
+                            <h3>Fabada</h3>
+                            <p>Un clásico reconfortante de alubias blancas con chorizo, morcilla y panceta. Un guiso tradicional lleno de sabor perfecto para días fríos.</p>
+                            <ul>
+                                <li><span>Valor energético:</span> 142 kcal</li>
+                                <li><span>Grasas/Lípidos:</span> 5 g</li>
+                                <li><span>Hidratos de carbono:</span> 18.5 g</li>
+                                <li><span>Proteínas:</span> 8.5 g</li>
+                            </ul>
+                        </div>
+                        <div class="precioIcono">
+                            <p class="precio">10.50€</p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="" alt="card4">
-                    <div>
-
+                    <img src="images/platos/MousakkaBechamel.webp" alt="card4">
+                    <div class="infoProducto">
+                        <div class="tituloDescripcion">
+                            <h3>Musaka con bechamel de coliflor</h3>
+                            <p>Capas de berenjena, carne especiada y una suave bechamel de coliflor. Una versión ligera y deliciosa del clásico griego.</p>
+                            <ul>
+                                <li><span>Valor energético:</span> 162 kcal</li>
+                                <li><span>Grasas/Lípidos:</span> 5.7 g</li>
+                                <li><span>Hidratos de carbono:</span> 20 g</li>
+                                <li><span>Proteínas:</span> 8.5 g</li>
+                            </ul>
+                        </div>
+                        <div class="precioIcono">
+                            <p class="precio">11.50€</p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="" alt="card5">
-                    <div>
-
+                    <img src="images/platos/RigatoniPesto.webp" alt="card5">
+                    <div class="infoProducto">
+                        <div class="tituloDescripcion">
+                            <h3>Rigatoni al pesto</h3>
+                            <p>Pasta rigatoni bañada en un cremoso pesto de albahaca, con un toque de queso parmesano. Una opción fresca y sabrosa para los amantes de la pasta.</p>
+                            <ul>
+                                <li><span>Valor energético:</span> 176 kcal</li>
+                                <li><span>Grasas/Lípidos:</span> 6.6g</li>
+                                <li><span>Hidratos de carbono:</span> 24.6g</li>
+                                <li><span>Proteínas:</span> 5.4 g</li>
+                            </ul>
+                        </div>
+                        <div class="precioIcono">
+                            <p class="precio">9.00€</p>
+                            <p class="iconoCards iconoVegano">Vegano</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="" alt="card6">
-                    <div>
-
+                    <img src="images/platos/TikaMassala.webp" alt="card6">
+                    <div class="infoProducto">
+                        <div class="tituloDescripcion">
+                            <h3>Pollo Tika Massala</h3>
+                            <p>Tiernos trozos de pollo marinados en especias y cocinados en una cremosa salsa tikka masala. Un plato lleno de sabor y aromas exóticos.</p>
+                            <ul>
+                                <li><span>Valor energético:</span> 89 kcal</li>
+                                <li><span>Grasas/Lípidos:</span> 3.6 g</li>
+                                <li><span>Hidratos de carbono:</span> 11.3 g</li>
+                                <li><span>Proteínas:</span> 12.7 g</li>
+                            </ul>
+                        </div>
+                        <div class="precioIcono">
+                            <p class="precio">11.90€</p>
+                            <p class="iconoCards iconoProteinas">Alto en Proteínas</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section> <!-- Tabla + Políticas ecológicas -->
-            <h2></h2>
-            <div></div>
+        <hr>
+        <section class="zonaInformativa"> <!-- Tabla + Políticas ecológicas -->
+            <div class="tablaProductos" id="tabla">
+                <table>
+                    <tr>
+                        <th>Plato</th>
+                        <th>Grasas/Lipidos</th>
+                        <th>Hidratos de Carbono</th>
+                        <th>Proteinas</th>
+                        <th>Valor Energético</th>
+                    </tr>
+                    <tr>
+                        <td>Albóndigas</td>
+                        <td>4.6 g</td>
+                        <td>12.6 g</td>
+                        <td>5.6 g</td>
+                        <td>121 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Ensalada de cous cous</td>
+                        <td>4.16 g</td>
+                        <td>12.6 g</td>
+                        <td>2.6 g</td>
+                        <td>96 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Fabada</td>
+                        <td>5 g</td>
+                        <td>18.5 g</td>
+                        <td>8.5 g</td>
+                        <td>142 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Musaka</td>
+                        <td>5.7 g</td>
+                        <td>20 g</td>
+                        <td>8.5 g</td>
+                        <td>163 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Rigatoni al pesto</td>
+                        <td>6.6 g</td>
+                        <td>24.6 g</td>
+                        <td>5.4 g</td>
+                        <td>176 g</td>
+                    </tr>
+                    <tr>
+                        <td>Tika Massala</td>
+                        <td>3.6 g</td>
+                        <td>11.3 g</td>
+                        <td>12.7 g</td>
+                        <td>89 kcal</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="politicasEcologicas">
+                <div class="tituloEcologico">
+                    <p>Políticas Ecológicas </p>
+                </div>
+                <div class="textoEcologico">
+                    <p>Implementamos envases reciclables y biodegradables para reducir el plástico, priorizamos ingredientes locales y de temporada para disminuir la huella de carbono, y gestionamos el desperdicio donando excedentes. Usamos entregas ecológicas mediante bicicletas o vehículos eléctricos, además de utilizar energía renovable en nuestras instalaciones para minimizar el impacto ambiental.</p>
+                </div>
+                <div class="listaMedidas">
+                    <ol>
+                        <li><span>Envases sostenibles:</span> Uso de envases reciclables y biodegradables para minimizar el plástico</li>
+                        <li><span>Ingredientes locales:</span> Priorizamos productos de temporada y de proximidad para reducir la huella de carbono</li>
+                        <li><span>Reducción de desperdicio:</span> Donamos los excedentes de alimentos a organizaciones benéficas</li>
+                        <li><span>Entregas ecológicas:</span> Repartos con bicicletas o vehículos eléctricos para reducir emisiones</li>
+                        <li><span>Energía verde:</span> Uso de fuentes de energía renovable en nuestras instalaciones</li>
+                    </ol>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <div></div> <!-- Redes sociales -->
-        <div></div> <!-- Derechos de autor -->
+        <h2>Nuestras redes sociales:</h2>
+        <div>
+            <p><img src="images/iconos/instagram.png" alt=""> Instagram: @gourmetExpress</p>
+            <p><img src="images/iconos/twitter-x.webp" alt""> Twitter: @gourmetExpress</p>
+            <p><img src="images/iconos/gmail.png" alt=""> Correo de contacto: gourmetExpress@gmail.com</p>
+        </div>
+        <div class="derechosAutor">
+            <p>Derechos de autor</p>
+        </div>
     </footer>
 </body>
 

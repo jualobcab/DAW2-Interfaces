@@ -1,0 +1,71 @@
+/* Global */
+body {
+    margin: 0;
+    font-size: large;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+
+    padding: 8px;
+    background-color: aquamarine;
+}
+
+/* Nav */
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+
+    background-color: chocolate;
+    padding: 5px;
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-columns: auto;
+
+    padding: 10px;
+    background-color: chartreuse;
+}
+
+section {
+    margin: 5px;
+    background-color: wheat;
+}
+
+section.promocion,section.tablaYPoliticas {
+    text-align: center;
+}
+
+section.productosDestacados {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    gap: 10px 20px;
+
+    padding: 15px;
+}
+section.productosDestacados>div {
+    text-align: center;
+    width: 80%;
+    margin: 5px;
+    background-color: rgb(180, 74, 74);
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: auto;
+
+    background-color: cadetblue;
+}
+footer>div {
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(223, 177, 61);   
+}

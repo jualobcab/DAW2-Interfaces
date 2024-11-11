@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+	@import url(base.css);
+	@import url(content.css);
+    </style>
+   
+    <title>Resumen textual alternativo para la presentación "Conversión de una lista en un menú de navegación".</title>
+  </head>
+  <body>
+	<p>Crear una barra de navegación vertical y horizontal</p>
+
+<p>Combinando las técnicas CSS de listas y de anclas podemos convertir simples listas en barras de navegación verticales muy vistosas. </p>
+<p>
+Para que estas barras verticales se conviertan en horizontales, como veremos después, también tendremos que emplear las técnicas de flotado.</p>
+
+<p>Archivo html de partida:</p>
+
+<div class="codigo elemento_centrado" style="width: 74.2em">
+<div class="texto_izquierda">
+<pre>
+<code>&lt;!DOCTYPE html>
+</pre>
+<pre>
+<code>&lt;html lang=“es” </code>
+</pre>
+<pre>
+<code>  &lt;head&gt;</code>
+</pre>
+<pre>
+<code>    &lt; meta charset="UTF-8" /&gt;</code>
+</pre>
+<pre>
+<code>    &lt; meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</code>
+</pre>
+<pre>
+<code>    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge" /&gt;</code>
+</pre>
+<pre>
+<code>    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;estilos.css&quot; /&gt;</code>
+</pre>
+<pre>
+<code>    &lt;title&gt;Barras de navegación con listas&lt;/title&gt;</code>
+</pre>
+<pre>
+<code>  &lt;/head&gt;</code>
+</pre>
+<pre>
+<code>  &lt;body&gt;</code>
+</pre>
+<pre>
+<code>&lt;ul&gt;</code>
+</pre>
+<pre>
+<code>&lt;li&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/C%C3%B3digo_HTML&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;</code>
+</pre>
+<pre>
+<code>&lt;li&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/CSS&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;</code>
+</pre>
+<pre>
+<code>&lt;li&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/JavaScript&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;</code>
+</pre>
+<pre>
+<code>&lt;li&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/.php&quot;&gt;PHP&lt;/a&gt;&lt;/li&gt;</code>
+</pre>
+<pre>
+<code>&lt;li&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/JQuery&quot;&gt;JQuery&lt;/a&gt;&lt;/li&gt;</code>
+</pre>
+<pre>
+<code>&lt;li&gt;&lt;a href=&quot;http://es.wikipedia.org/wiki/AJAX&quot;&gt;AJAX&lt;/a&gt;&lt;/li&gt;</code>
+</pre>
+<pre>
+<code>&lt;/ul&gt;</code>
+</pre>
+<pre>
+<code>  &lt;/body&gt;</code>
+</pre>
+<pre>
+<code>&lt;/html&gt;</code>
+</pre>
+</div>
+</div>
+
+<p>El archivo estilos.css así modificado quedará del siguiente modo:</p>
+<div class="codigo elemento_centrado" style="width: 29.1em">
+<div class="texto_izquierda">
+<pre>
+<code>ul { margin: 0; padding: 0; </code>
+</pre>
+<pre>
+<code>      list-style: none; </code>
+</pre>
+<pre>
+<code>      float:left;</code>
+</pre>
+<pre>
+<code>      width: 720px; </code>
+</pre>
+<pre>
+<code>      background-color: orange; } </code>
+</pre>
+<pre>
+<code></code>
+</pre>
+<pre>
+<code>ul li { float: left; } </code>
+</pre>
+<pre>
+<code></code>
+</pre>
+<pre>
+<code>ul li a { display: block; </code>
+</pre>
+<pre>
+<code>         padding: 0 2em; </code>
+</pre>
+<pre>
+<code>         line-height: 2.1em; </code>
+</pre>
+<pre>
+<code>         text-decoration: none; </code>
+</pre>
+<pre>
+<code>         color: white; font-weight: bold; </code>
+</pre>
+<pre>
+<code>  } </code>
+</pre>
+</div>
+</div>
+
+  </body>
+</html>

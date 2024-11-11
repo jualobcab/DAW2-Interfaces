@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Descripción de las propiedades margin en elementos en bloque y en línea.</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<div id="header"><div id="headerContent"><h1></h1></div></div>
+<div id="main">
+<div class="node level-1-node">
+<div class="nodeDecoration"><h1 id="exenode_0_Descripcindelaspropiedadesmarginenelementosenbloqueyenlnea" class="nodeTitle">Descripción de las propiedades margin en elementos en bloque y en línea.</h1></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id0-0">
+<div class="iDevice emphasis0">
+<div id="ta0_154" class="block iDevice_content">
+<div class="pre-code">
+<div>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Ejemplo propiedad margin&lt;/title&gt;
+    
+    &lt;style&gt;
+            /* Definimos los márgenes de h1*/
+            h1 {margin: 10px 50px 50px 50px;
+                border: 1px black solid; }
+            /* Definimos los márgenes de h2*/   
+            h2 {margin: 50px 50px 50px 100px;
+                border: 1px black solid; }
+            /* Definimos los márgenes del span*/   
+            span {margin: 5px 50px ;
+                 border: 1px black solid; }
+        
+        
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt; Título h1&lt;/h1&gt; 
+    &lt;h2&gt; Título h2&lt;/h1&gt; 
+    &lt;h1&gt; Título h1&lt;/h1&gt; 
+    &lt;span&gt; Elemento 1&lt;/span&gt;&lt;span&gt; Elemento 2&lt;/span&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<p><br />Se muestra una pantalla  el código anterior, el resultado de la página y debajo de esta el depurador del navegador donde podemos ver las propiedades de los elementos seleccionados.</p>
+<p>Seleccionamos un elemento h1 y le cambiamos los márgenes. Cambiados estos valores vamos al depurador y seleccionamos diferentes objetos y vemos sus propiedades, tamaño de caja, propiedades margin, padding y border.</p>
+<p>Comprobamos también el colapso de los márgenes, vemos como los márgenes verticales de los elementos de caja se colapsan; el margen inferior de h1 es 50 igual que el margen superior de h2, estos se colapsan y el margen de ambos es 50, es decir se queda con el mayor de los dos.</p>
+<p>Posteriormente vamos a los elementos de línea  y vemos que los márgenes laterales no se colapsan y se suman, vemos como la diferentecia lateral de dos elementos es igual al margen derecho de un elemento más el margen izquierdo del elemento siguiente.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<script type="text/javascript" src="my_js.js"></script></body></html>
