@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Express</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleEntrega3.css">
+</head>
+<body>
+    <script src="scriptAccesibilidad.js"></script>
+    <header>
+        <div class="zona-Logo" id="logo-link" href="index.html"> <!-- Logo + nombre de empresa -->
+            <a id="logo-link" href="index.html">
+                <img src="images/logoTemplate.webp" alt="logoEmpresa" class="logo-Empresa">
+            </a>
+            <p class="nombreEmpresa">Gourmet Express</p>
+        </div>
+        <div class="login"> <!-- Un login -->
+            <form action="#" id="formularioPc">
+                <div class="form-Section">
+                    <div class="form-Group">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-Group">
+                        <label for="contrasenya">Contraseña:</label>
+                        <input type="password" id="contrasenya" name="contrasenya">
+                    </div>
+                </div>
+                <div class="form-Group_align-bottom form-Group">
+                    <input type="submit" id="login" name="login" value="Log in">
+                </div>
+            </form>
+            <div class="form-Group_align-bottom form-Group" id="botonMovilLogin">
+                <input type="submit" id="login" name="login" value="Log in">
+            </div>
+        </div>
+    </header>
+    <nav> <!-- Ponerle sticky y formato (futura hamburguesa) -->
+        <a href="https://www.iescristobaldemonroy.es/wordpress/" accesskey="p">Platos</a>
+        <a href="https://www.iescristobaldemonroy.es/wordpress/" accesskey="d">Dietas Especiales</a>
+        <a href="https://www.iescristobaldemonroy.es/wordpress/" accesskey="m">Menús</a>
+        <a href="accesibilidad.html" accesskey="a">Accesibilidad</a>
+    </nav>
+    <main>
+        <section class="ejercicio4">
+            <h2>Declaración de Accesibilidad</h2>
+            <div>
+                <h3>A)Nivel de conformidad alcanzado</h3>
+                <p>El sitio web cumple con el nivel AAA de las WCAG 2.2 según el análisis realizado por la extensión de WAVE. Esto significa que se han implementado las pautas necesarias para que el sitio web sea accesible para la mayoría de usuarios.</p>
+            </div>
+            <div>
+                <h3>B)Accesibilidad en la navegación</h3>
+                <p>En cuanto a las medidas que se están tomando para que el sitio web sea usable y accesible, se han realizado las siguientes:</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h4>Informacion accesible</h4>
+                        <ul>
+                            <li>Uso de etiquetas claras y descriptivas en los enlaces</li>
+                            <li>Accesibilidad del formulario de inicio de sesión</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Consistencia</h4> 
+                        <ul>
+                            <li>Uso de colores y tipografías consistentes mediante el uso de CSS</li>
+                            <li>Diseño coherente de botones e interacciones</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Persistencia</h4> 
+                        <ul>
+                            <li>Navegación fija (Sticky)</li>
+                            <li>Formulario visible en dispositivos móviles</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Sencillez de navegación</h4> 
+                        <ul>
+                            <li>Menú de navegación simple e organizado</li>
+                            <li>Organización clara de secciones</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Herramientas: ¿Ratón o Teclado?</h4> 
+                        <ul>
+                            <li>Optimización para navegación por teclado con formularios y botones accesibles</li>
+                            <li>Estilos visuales para el foco</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>C) Diferencias entre navegadores</h3>
+                <p>En cuanto a accesibilidad, tanto Chrome como Firefox ofrecen buen soporte, pero Chrome destaca por su amplia gama de extensiones y herramientas para desarrolladores, mientras que Firefox se enfoca en compatibilidad con tecnologías de asistencia. En términos de usabilidad, Chrome es más rápido y tiene una interfaz simple, ideal para usuarios que buscan eficiencia. Firefox, aunque más lento, ofrece mayor personalización y un enfoque más fuerte en privacidad. Ambos navegadores tienen fortalezas según las necesidades del usuario, pero Chrome es generalmente más optimizado para rendimiento.</p>
+            </div>
+            
+            <div>
+                <h3>D) Criterios de Confromaidad (o éxito)</h3>
+                <ul>
+                    <li>
+                        <h4>Uso de fuentes legibles y alternativas para accesibilidad visual</h4>
+                        Uso de un alto contraste de color en el texto y el fondo, como el fondo oscuro en el encabezado con texto claro. También se asegura la visibilidad de los elementos importantes con colores contrastantes como el verde en los botones y los elementos destacados. Esto facilita la lectura a personas con dificultades visuales.
+                    </li>
+                    <li>
+                        <h4>Navegación accesible con teclado</h4>
+                        Se asegura que todos los elementos interactivos (como formularios, enlaces y botones) sean accesibles mediante teclado. Esto se logra mediante el uso de etiquetas adecuadas y la estructura lógica del contenido, permitiendo a los usuarios navegar sin necesidad de un ratón.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>E) Principios de Jakob Nielsen</h3>
+                <ul>
+                    <li>
+                        Visibilidad del estado del sistema
+                        <ul>
+                            <li><h4>Principio:</h4>El sistema siempre debe mantener informados a los usuarios sobre lo que está ocurriendo, a través de retroalimentación adecuada en un tiempo razonable.</li>
+                            <li><h4>Aplicación:</h4>Se aplica en el formulario de login y en los botones de envío, donde se muestra un cambio de color en el botón de "Iniciar sesión" cuando se pasa el ratón sobre él, lo que informa al usuario de que la acción es interactiva.</li>
+                            <img src="images/apartadoE1.png" alt="fragmentoDeCodigo" class="apartadoE">
+                        </ul>
+                    </li>
+                    <li>
+                        Consistencia y estándares
+                        <ul>
+                            <li><h4>Principio:</h4>Los usuarios no deben tener que preguntarse si diferentes palabras, situaciones o acciones significan lo mismo.</li>
+                            <li><h4>Aplicación:</h4>Se mantiene un diseño consistente en toda la página, con colores y tipografías uniformes, como el uso constante de la fuente "Oswald" en los títulos y de la fuente "Fira Sans" en el cuerpo de texto.</li>
+                            <img src="images/apartadoE2.png" alt="fragmentoDeCodigo" class="apartadoE">
+                        </ul>
+                    </li>
+                    <li>
+                        Prevención de errores
+                        <ul>
+                            <li><h4>Principio:</h4>Mejor que proporcionar buenos mensajes de error es diseñar el sistema de tal forma que los problemas no ocurran</li>
+                            <li><h4>Aplicación:</h4>En el código no se han incluido validaciones en el formulario de login ni en otros campos, pero en una implementación completa se podría usar la validación de formularios con mensajes claros antes de que el usuario intente enviar datos incorrectos, previniendo errores.</li>
+                            <img src="images/apartadoE3.png" alt="fragmentoDeCodigo" class="apartadoE">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Nuestras redes sociales:</h2>
+        <div>
+            <p><img src="images/iconos/instagram.png" alt="instagram"> Instagram: @gourmetExpress</p>
+            <p><img src="images/iconos/twitter-x.webp" alt="twitter"> Twitter: @gourmetExpress</p>
+            <p><img src="images/iconos/gmail.png" alt="gmail"> Correo de contacto: gourmetExpress@gmail.com</p>
+        </div>
+        <img src="images/wcag-22.png" alt="nivelConformidadWCAG" class="wcag">
+        <a href="accesibilidad.html" class="enlaceAccesibilidad" id="enlaceAccesibilidad">Declaración de Accesibilidad</a>
+        <div class="derechosAutor">
+            <p>Derechos de autor</p>
+        </div>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+:root{
+    --color-Form: rgb(243, 239, 231);
+    --color-FormBorde: rgb(235, 220, 190);
+}
+
+*:focus {
+    border: red 2px dashed;
+}
+
+#logo-link {
+    text-decoration: none;
+}
+
+.solicitudInfo {
+    background-color: var(--color-Form);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px var(--color-FormBorde) solid;
+}
+.solicitudInfo form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.solicitudInfo form .subcategorias {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.enlaceAccesibilidad {
+    color: azure;
+}
+
+.wcag {
+    max-width: 100px;
+}
+.ejercicio4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

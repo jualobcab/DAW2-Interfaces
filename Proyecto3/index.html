@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gourmet Express</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleEntrega3.css">
 </head>
-
 <body>
+    <script src="scriptIndex.js"></script>
     <header>
-        <div class="zona-Logo"> <!-- Logo + nombre de empresa -->
-            <img src="images/logoTemplate.webp" alt="logoEmpresa" class="logo-Empresa">
+        <div class="zona-Logo" id="logo-link" href="index.html"> <!-- Logo + nombre de empresa -->
+            <a id="logo-link" href="index.html">
+                <img src="images/logoTemplate.webp" alt="logoEmpresa" class="logo-Empresa">
+            </a>
             <p class="nombreEmpresa">Gourmet Express</p>
         </div>
         <div class="login"> <!-- Un login -->
@@ -35,23 +38,16 @@
         </div>
     </header>
     <nav> <!-- Ponerle sticky y formato (futura hamburguesa) -->
-        <a href="#">Platos</a>
-        <a href="#">Dietas Especiales</a>
-        <a href="#">Menús</a>
+        <a href="https://www.iescristobaldemonroy.es/wordpress/" accesskey="p">Platos</a>
+        <a href="https://www.iescristobaldemonroy.es/wordpress/" accesskey="d">Dietas Especiales</a>
+        <a href="https://www.iescristobaldemonroy.es/wordpress/" accesskey="m">Menús</a>
+        <a href="accesibilidad.html" accesskey="a">Accesibilidad</a>
     </nav>
     <main>
         <section> <!-- Productos en promoción -->
             <h2>Productos en promoción</h2>
             <div class="promocion">
-                <input id="flip-card" type="checkbox" />
-                <label class="front" for="flip-card">
-                    <img src="images/platos/spaghettis.webp" alt="Plato en promocion" class="imagenPromocion"/>
-                </label>
-                <label class="back" for="flip-card">
-                    <div>
-                        <p class="precioPromocion">Por solo 12.99 € !!!!!</p>
-                    </div>
-                </label>
+                <img src="images/platos/spaghettis.webp" alt="Plato en promocion" class="imagenPromocion"/>
                 <div>
                     <a class="tituloProductoPromocion">Spaghettis cacio e pepe con guanciale</a>
                     <p>Nuestros spaghetti cacio e pepe con guanciale son un deleite para los amantes de la pasta: la cremosidad del queso pecorino se funde con la pimienta negra recién molida, creando una salsa sedosa que envuelve cada bocado. El guanciale, dorado y crujiente, añade un toque ahumado y salado que equilibra a la perfección la suavidad del queso. ¡Una explosión de sabores sencillos pero irresistibles que te transportarán a la auténtica cocina italiana!</p>
@@ -178,76 +174,88 @@
             </div>
         </section>
         <hr>
-        <section class="zonaInformativa"> <!-- Tabla + Políticas ecológicas -->
-            <div class="tablaProductos" id="tabla">
-                <table>
-                    <tr>
-                        <th>Plato</th>
-                        <th>Grasas/Lipidos</th>
-                        <th>Hidratos de Carbono</th>
-                        <th>Proteinas</th>
-                        <th>Valor Energético</th>
-                    </tr>
-                    <tr>
-                        <td>Albóndigas</td>
-                        <td>4.6 g</td>
-                        <td>12.6 g</td>
-                        <td>5.6 g</td>
-                        <td>121 kcal</td>
-                    </tr>
-                    <tr>
-                        <td>Ensalada de cous cous</td>
-                        <td>4.16 g</td>
-                        <td>12.6 g</td>
-                        <td>2.6 g</td>
-                        <td>96 kcal</td>
-                    </tr>
-                    <tr>
-                        <td>Fabada</td>
-                        <td>5 g</td>
-                        <td>18.5 g</td>
-                        <td>8.5 g</td>
-                        <td>142 kcal</td>
-                    </tr>
-                    <tr>
-                        <td>Musaka</td>
-                        <td>5.7 g</td>
-                        <td>20 g</td>
-                        <td>8.5 g</td>
-                        <td>163 kcal</td>
-                    </tr>
-                    <tr>
-                        <td>Rigatoni al pesto</td>
-                        <td>6.6 g</td>
-                        <td>24.6 g</td>
-                        <td>5.4 g</td>
-                        <td>176 g</td>
-                    </tr>
-                    <tr>
-                        <td>Tika Massala</td>
-                        <td>3.6 g</td>
-                        <td>11.3 g</td>
-                        <td>12.7 g</td>
-                        <td>89 kcal</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="politicasEcologicas">
-                <div class="tituloEcologico">
-                    <p>Políticas Ecológicas </p>
-                </div>
-                <div class="textoEcologico">
-                    <p>Implementamos envases reciclables y biodegradables para reducir el plástico, priorizamos ingredientes locales y de temporada para disminuir la huella de carbono, y gestionamos el desperdicio donando excedentes. Usamos entregas ecológicas mediante bicicletas o vehículos eléctricos, además de utilizar energía renovable en nuestras instalaciones para minimizar el impacto ambiental.</p>
-                </div>
-                <div class="listaMedidas">
-                    <ol>
-                        <li><span>Envases sostenibles:</span> Uso de envases reciclables y biodegradables para minimizar el plástico</li>
-                        <li><span>Ingredientes locales:</span> Priorizamos productos de temporada y de proximidad para reducir la huella de carbono</li>
-                        <li><span>Reducción de desperdicio:</span> Donamos los excedentes de alimentos a organizaciones benéficas</li>
-                        <li><span>Entregas ecológicas:</span> Repartos con bicicletas o vehículos eléctricos para reducir emisiones</li>
-                        <li><span>Energía verde:</span> Uso de fuentes de energía renovable en nuestras instalaciones</li>
-                    </ol>
-                </div>
+        <section class="">
+            <h2>Solicitud de Información</h2>
+            <div class="solicitudInfo">
+                <form id="solicitudInfoFormulario">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" maxlength="15" required id="nombre" name="nombre">
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" maxlength="30" required id="apellido" name="apellido">
+                    <label for="email">Email:</label>
+                    <input type="email" maxlength="20" required id="email" name="email">
+
+                    <fieldset>
+                        <legend>Categorías sobre las que recibir información: </legend>
+                        <input type="checkbox" name="productosNuevos" id="productosNuevos">
+                        <label for="productosNuevos">Productos Nuevos</label>
+                        <div class="subcategorias">
+                            <div>
+                                <input type="checkbox" id="platosNuevos" name="platosNuevos">
+                                <label for="platosNuevos">Platos Nuevos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="dietasNuevas" name="dietasNuevas">
+                                <label for="dietasNuevas">Dietas Nuevas</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="menusNuevos" name="menusNuevos">
+                                <label for="menusNuevos">Menus Nuevos</label>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" name="ofertas" id="ofertas">
+                        <label for="ofertas">Ofertas</label>
+                        <div class="subcategorias">
+                            <div>
+                                <input type="checkbox" id="ofertaPlatos" name="ofertaPlatos">
+                                <label for="ofertaPlatos">Oferta Platos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ofertaDietas" name="ofertaDietas">
+                                <label for="ofertaDietas">Oferta Dietas</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ofertaMenus" name="ofertaMenus">
+                                <label for="ofertaMenus">Oferta Menus</label>
+                            </div>
+                        </div>
+
+                        <input type="checkbox" name="otraInfo" id="otraInfo">
+                        <label for="otraInfo">Otra Informacion</label>
+                        <div class="subcategorias">
+                            <div>
+                                <input type="checkbox" id="nuevosLocales" name="nuevosLocales">
+                                <label for="nuevosLocales">Nuevos Locales</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="horarios" name="horarios">
+                                <label for="horarios">Horarios</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <div>
+                            <input type="checkbox" name="suscripcion" id="suscripcion">
+                            <label for="suscripcion">Suscribirse</label>
+                        </div>
+                        <div>
+                            <label for="meses">Meses de suscripción:</label>
+                            <select name="meses" id="meses">
+                                <option value="1">1 mes</option>
+                                <option value="2">2 meses</option>
+                                <option value="3">3 meses</option>
+                                <option value="4">4 meses</option>
+                                <option value="5">5 meses</option>
+                                <option value="6">6 meses</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="submit" id="enviar" value="Enviar">
+                    <input type="reset" id="cancelarInformacion" value="Cancelar">
+                </form>
             </div>
         </section>
     </main>
@@ -258,9 +266,12 @@
             <p><img src="images/iconos/twitter-x.webp" alt="twitter"> Twitter: @gourmetExpress</p>
             <p><img src="images/iconos/gmail.png" alt="gmail"> Correo de contacto: gourmetExpress@gmail.com</p>
         </div>
+        <img src="images/wcag-22.png" alt="nivelConformidadWCAG" class="wcag">
+        <a href="accesibilidad.html" class="enlaceAccesibilidad" id="enlaceAccesibilidad">Declaración de Accesibilidad</a>
         <div class="derechosAutor">
             <p>Derechos de autor</p>
         </div>
+        
     </footer>
 </body>
 

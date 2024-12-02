@@ -14,7 +14,7 @@
     --color-Secundario: #424242;
     --color-Precio: #883cae;
     --color-Cards: rgb(243, 239, 231);
-    --color-Picante: #E53935;
+    --color-Picante: #e45654;
     --color-Proteinas: #d8c51c;
     font-size: 1.1rem;
     font-family: "Fira Sans", sans-serif;
@@ -64,6 +64,10 @@ header>div.login {
     display: flex;
 }
 
+header a {
+    margin: 0;
+}
+
 header>div.zona-Logo {
     font-size: large;
     display: flex;
@@ -72,7 +76,7 @@ header>div.zona-Logo {
 
 .logo-Empresa {
     border-radius: 5px;
-    width: 35%;
+    width: 100%;
     max-width: 200px;
     margin: 7px;
 }
@@ -175,6 +179,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     
 
     border-radius: 15px;
@@ -205,24 +210,13 @@ section {
     color: azure;
 }
 .promocion img{
-  width:100%
+  width:55%
   }
 .promocion>div {
     padding: 15px;
     width: 45%;
     border-left: 3px dashed var(--color-Principal);
     box-sizing: border-box; 
-}
-
-/* imagen on click */
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"] ~ .back,input[type="checkbox"]:checked ~ .front{
-  display:none;
-}
-input[type="checkbox"] ~ .front,input[type="checkbox"]:checked ~ .back{
-  display:block;
 }
 
 /* Texto a la derecha de la imagen*/
@@ -321,7 +315,7 @@ li span {
     padding-right: 10px;
 
     font-weight: bold;
-    color: whitesmoke;
+    color: black;
 }
 .iconoVegano {
     background-color: var(--color-Principal);
@@ -422,6 +416,8 @@ footer {
     background-color: var(--color-Secundario);
     padding: 20px;
     color: azure;
+    display: flex;
+    flex-direction: column;
 }
 footer img {
     max-width: 15px;
